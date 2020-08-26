@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--  Css Link  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/icofont.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+<body>
+<!-- Wrapper Defined -->
+<div id="wrapper">
+
+    <!--  Banner Area  -->
+    <div class="banner-area">
+        <div class="banner-overlay"></div>
+        <div class="position-relative ui-body">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="./assets/images/britslogo.png" class="logo-image" alt="">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                               role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/images/language.webp" class="language-icon" alt="">
+                                ENG
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">BANG</a>
+                                <a class="dropdown-item" href="#">ENG</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner-text">
+                <h3>BANGLADESH RAILWAYS</h3>
+                <p>Safety l Security l Punctuality</p>
+            </div>
+            <div class="banner-form">
+                <div class="banner-form-header">
+                    <h5>Book Tickets</h5>
+                </div>
+                <div class="banner-form-body">
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="from">FROM</label>
+                            <select name="from" class="form-control banner-form-input" id="from">
+                                <option value="">Departure</option>
+                                <option value="">Dhaka</option>
+                            </select>
+                            <span class="banner-form-input-highlight-text">Starting Location</span>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="to">TO</label>
+                            <select name="to" class="form-control banner-form-input" id="to">
+                                <option value="">Arrival</option>
+                                <option value="">Dinajpur</option>
+                            </select>
+                            <span class="banner-form-input-highlight-text">Where to go</span>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="date">DATE</label>
+                            <input type="date" name="date" class="form-control banner-form-input" id="date">
+                            <span class="banner-form-input-highlight-text">Depart Date</span>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="d-block font-weight-bold">&nbsp;</label>
+                            <button class="btn btn-danger btn-block font-weight-bold">Find Trains
+                                <i class="icofont-search d-inline-block pl-1"></i>
+                            </button>
+                            <span class="banner-form-input-highlight-text">Click here for advanced
+                                options</span>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="class">CLASS</label>
+                            <select name="v" class="form-control banner-form-input" id="class">
+                                <option value="">Choose a class</option>
+                            </select>
+                            <span class="banner-form-input-highlight-text">Select a Class</span>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="passenger">PASSENGER(S)</label>
+                            <select name="passenger" class="form-control banner-form-input" id="passenger">
+                                <option value="">Select no of Adult's</option>
+                            </select>
+                            <span class="banner-form-input-highlight-text">Adult Passenger(s)</span>
+                            <span class="banner-form-input-highlight-text">
+                                <span class="d-block">
+                                    <span class="text-danger">*</span>
+                                    <span>Maximum 4 seats can be issued</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label class="d-block font-weight-bold" for="child">CHILD</label>
+                            <select name="child" class="form-control banner-form-input" id="child">
+                                <option value="">Select no of Child's</option>
+                            </select>
+                            <span class="banner-form-input-highlight-text">Child Passenger(s)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Home Page Body Area  -->
+    <div class="home-page-body">
+        <img src="./assets/images/home-page-body.png" alt="">
+    </div>
+
+    <!--  Login Modal  -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
+        Login
+    </button>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="login-modal-close-button">
+                    <i class="icofont-close-line-circled" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-header login-modal-header-area">
+                    <h5 class="modal-title login-modal-title" id="exampleModalLabel">Login</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label class="d-block font-weight-bold" for="mobile_number">Mobile
+                                        Number</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="mobile_number"
+                                           id="mobile_number" placeholder="Password">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="password">Password</label>
+                                    <input type="password" class="form-control banner-form-input"
+                                           name="password"
+                                           id="password" placeholder="Password">
+                                </div>
+                                <div class="col-md-6 offset-md-6 text-success">
+                                    Forget Password
+                                </div>
+                                <div class="col-md-12 pt-3">
+                                    <button
+                                            class="btn btn-danger btn-block font-weight-bold banner-form-input login-modal-button">
+                                        Login
+                                    </button>
+                                </div>
+                                <div class="col-md-12 pt-1 text-center">
+                                    <p>Don't have an account?
+                                        <span class="text-success">Sign up</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Registration Modal  -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration-modal">
+        Registration
+    </button>
+    <div class="modal fade" id="registration-modal" tabindex="-1" role="dialog"
+         aria-labelledby="registrationModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="registration-modal-close-button">
+                    <i class="icofont-close-line-circled" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-header registration-modal-header-area">
+                    <h5 class="modal-title registration-modal-title" id="registrationModalLabel">Sign Up</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label class="d-block font-weight-bold" for="first_name">First
+                                        Name</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="first_name"
+                                           id="first_name" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="reg_last_name">Last
+                                        Name</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="last_name" id="reg_last_name" placeholder="Last Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="phone_number">Mobile
+                                        Number</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="phone_number"
+                                           id="phone_number" placeholder="Retype Mobile Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="confirm_phone">Confirm Mobile
+                                        Number</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="confirm_phone"
+                                           id="confirm_phone" placeholder="Confirm Mobile Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="national_id">National
+                                        Id Number</label>
+                                    <input type="text" class="form-control banner-form-input"
+                                           name="national_id"
+                                           id="national_id" placeholder="National Id Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="reg_email">Email
+                                        Address</label>
+                                    <input type="email" class="form-control banner-form-input"
+                                           name="email"
+                                           id="reg_email" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold" for="reg_password">Password
+                                    </label>
+                                    <input type="password" class="form-control banner-form-input"
+                                           name="password"
+                                           id="reg_password" placeholder="Password">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="d-block font-weight-bold"
+                                           for="confirm_password">Confirm
+                                        Password
+                                        Address</label>
+                                    <input type="password" class="form-control banner-form-input"
+                                           name="confirm_password"
+                                           id="confirm_password" placeholder="Retype Confirm Password">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="checkbox" class="text-success" name="terms_of_service"
+                                           id="terms_of_service">
+                                    I agree to the <span class="text-success">Terms of Service</span>
+                                </div>
+                                <div class="col-md-12 pt-3">
+                                    <button
+                                            class="btn btn-danger btn-block font-weight-bold banner-form-input registration-modal-button">
+                                        Sign Up
+                                    </button>
+                                </div>
+                                <div class="col-md-12 pt-1 text-center">
+                                    <p>Already Registered?
+                                        <span class="text-success">Login</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Js Link -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.slim.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+</body>
+</html>
