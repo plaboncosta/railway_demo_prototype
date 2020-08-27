@@ -70,3 +70,23 @@
     padding: 8px 25px;
     font-weight: 600;
     }
+
+
+/* Visa Modal Image */
+.visa-modal-image-area {
+
+    }
+
+.visa-modal-image-area img {
+    width: 150px;
+    }
+
+.visa-card-input {
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    padding: 8px;
+    }
+
+.visa-card-button {
+    background-color: #dc3545 !important;
+    }
