@@ -1,0 +1,72 @@
+.train-info, passenger-info, .footer-area {
+    width: 100%;
+    }
+
+.train-info img, .passenger-info img, .footer-area img {
+    width: 100%;
+    }
+
+.bank-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    }
+
+.bank-info-header > h5 {
+    color: #00008c;
+    font-size: 18px;
+    }
+
+.bank-info-header-right h5 {
+    font-size: 18px;
+    }
+
+.bank-info-header-right h5 span {
+    color: red;
+    }
+
+.bank-info-header-right > span {
+    font-size: 10px;
+    }
+
+.bank-info-body {
+    padding-right: 60px;
+    }
+
+.bank-info-body .tab-content {
+    margin-top: 35px;
+    }
+
+.bank-info-body ul li a {
+    color: #464343;
+    padding: 5px 25px;
+    }
+
+.bank-info-body ul li a.active {
+    background-color: #c7c7c7;
+    padding: 3px 25px;
+    font-weight: bold;
+    }
+
+.bank-info-body ul li a:hover {
+    text-decoration: none !important;
+    }
+
+.bank-info-footer {
+    margin-top: 10px;
+    }
+
+.bank-info-footer .safe-secure-payments {
+    display: block;
+    font-size: 12px;
+    color: #706868;
+    }
+
+.bank-info-footer .condition {
+    font-size: 14px;
+    }
+
+.bank-info-footer .confirm-payment {
+    padding: 8px 25px;
+    font-weight: 600;
+    }

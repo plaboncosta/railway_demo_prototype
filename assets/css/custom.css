@@ -8,6 +8,10 @@
     src: url('../fonts/icofont.woff');
     }
 
+body {
+    background-color: #F4F5F9;
+    }
+
 .logo-image {
     width: 90px;
     height: 90px;

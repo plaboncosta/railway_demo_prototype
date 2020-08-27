@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--  Css Link  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <link rel="stylesheet" href="./assets/css/icofont.min.css">
+</head>
+<body>
+<!-- Wrapper Defined -->
+<div id="wrapper">
+
+    <div class="row mx-0 px-0">
+        <div class="col-md-12 pt-4">
+            <!--  Train info  -->
+            <div class="train-info">
+                <img src="./assets/images/payment-page-train-info.png" alt="">
+            </div>
+        </div>
+
+        <div class="col-md-12 pt-4">
+            <!--  Passenger info  -->
+            <div class="passenger-info">
+                <img src="./assets/images/payment-page-passenger-details.png" alt="">
+            </div>
+        </div>
+
+        <div class="col-md-12 pt-4">
+            <!--  Bank info  -->
+            <div class="bank-info">
+                <div class="bank-info-header d-flex justify-content-between">
+                    <h5>Choose your payment option</h5>
+                    <div class="bank-info-header-right">
+                        <h5 class="mb-0">Amount to be paid: <span>BDT 2980.00</span></h5>
+                        <span class="d-block text-right">inclusive of all TAX</span>
+                    </div>
+                </div>
+                <div class="bank-info-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a class="active" data-toggle="tab" href="#card">Credit/Debit
+                            Card</a></li>
+                        <li><a data-toggle="tab" href="#wallet">Wallet</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="card" class="tab-pane fade in active show">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <input name="card_type" type="radio" value="visa" id="visa">
+                                    <label for="visa">
+                                        <img src="./assets/images/visa.png" width="60px" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input name="card_type" type="radio" value="master-card" id="master-card">
+                                    <label for="master-card">
+                                        <img src="./assets/images/mastercard.jpg" width="45px" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input name="card_type" type="radio" value="payment-card"
+                                           id="payment-card">
+                                    <label for="payment-card">
+                                        <img src="./assets/images/payment-card-2.png" width="45px" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input name="card_type" type="radio" value="american-express"
+                                           id="american-express">
+                                    <label for="american-express">
+                                        <img src="./assets/images/american-express.png" width="45px" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input name="card_type" type="radio" value="discover-card"
+                                           id="discover-card">
+                                    <label for="discover-card">
+                                        <img src="./assets/images/discover-card.png" width="60px" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="wallet" class="tab-pane fade">
+                            <div class="row mt-3">
+                                <div class="col-md-2">
+                                    <input name="wallet" type="radio" value="bkash" id="bkash">
+                                    <label for="bkash">
+                                        <img src="./assets/images/bkash.jpg" width="80px" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-md-2">
+                                    <input name="wallet" type="radio" value="nagad" id="nagad">
+                                    <label for="nagad">
+                                        <img src="./assets/images/nagad.jpg" width="100px" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bank-info-footer">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span class="safe-secure-payments">Safe and Secure Payments</span>
+                            <span class="condition">In case of cancellation, the refund will be applicable as
+                                New Railway
+                            Refund Rules, Please read Terms and Conditions</span>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-end">
+                            <button class="confirm-payment btn btn-danger banner-form-input">Confirm Payment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer Area  -->
+    <div class="footer-area pt-5">
+        <img src="./assets/images/payment-page-footer.png" alt="">
+    </div>
+
+</div>
+
+<!-- Js Link -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery.slim.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+</body>
+</html>
