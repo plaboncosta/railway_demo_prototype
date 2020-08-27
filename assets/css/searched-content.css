@@ -4,7 +4,10 @@
     }
 
 .navbar {
-    background-color: transparent !important;
+    background-color: #e8e8e8  !important;
+    -webkit-box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
+    box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
     }
 
 .nav-item {
@@ -14,7 +17,7 @@
 
 .nav-item .nav-link {
     font-size: 18px;
-    color: #fff !important;
+    color: #000 !important;
     font-weight: 600;
     }
 
@@ -28,7 +31,7 @@
     }
 
 .searched-content-area {
-    background-image: url('../images/searched-content.jpg');
+    background-image: url('../images/banner-two.jpg');
     height: 650px;
     width: 100%;
     background-position: 100% 100%;
@@ -81,16 +84,18 @@
     }
 
 .searched-content-form-body {
-    background-color: #fff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    padding: 30px 40px;
+    padding: 80px 40px;
     }
 
 .searched-content-form-input-highlight-text {
     font-size: 13px;
+    color: #e5dada;
     }
 
 .searched-content-form-input {
     border-radius: 20px !important;
+    }
+
+.searched-content-form-body label {
+    color: #fff;
     }
