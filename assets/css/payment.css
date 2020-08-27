@@ -150,3 +150,27 @@
     font-weight: 600;
     }
 
+
+/* Ticket Confirmation */
+.ticket-confirmation-body {
+    padding: 8px 50px;
+    }
+
+.ticket-confirmation-button {
+    font-weight: 600;
+    }
+
+.ticket-confirmation-journey-area {
+    padding: 0px 15px;
+    }
+
+.ticket-confirmation-journey {
+    font-weight: 600;
+    background-color: #17916F;
+    color: #fff;
+    }
+
+.ticket-confirmation-journey:hover {
+    color: #fff;
+    background-color: #05533e;
+    }
