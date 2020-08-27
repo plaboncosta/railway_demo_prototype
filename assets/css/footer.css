@@ -22,13 +22,13 @@
     margin-bottom: 50px;
 }
 
-.ui-footer-bottom{
+.ui-footer-container .ui-footer-bottom{
     color: white;
     background: #d60318;
     padding: 15px 120px;
 }
 
-.ui-footer-bottom b{
+.ui-footer-container .ui-footer-bottom b{
     font-width: 600;
     font-size: 18px;
 }
