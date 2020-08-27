@@ -120,6 +120,157 @@
         </div>
     </div>
 
+    <!--  Visa Card Modal  -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visa-card">
+        Visa Card
+    </button>
+    <div class="modal fade" id="visa-card" tabindex="-1" role="dialog" aria-labelledby="visaModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row mt-4">
+                        <div class="col-md-12 visa-modal-image-area d-flex justify-content-center">
+                            <img src="./assets/images/visa.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-7 offset-md-1">
+                            <label for="card_number" class="font-weight-bold">CARD NUMBER</label>
+                            <input type="text" name="card_number" class="form-control visa-card-input"
+                                   id="card_number" placeholder="CARD NUMBER">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cvc" class="font-weight-bold">CVC</label>
+                            <input type="text" name="cvc" class="form-control visa-card-input"
+                                   id="cvc" placeholder="CVC">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-10 offset-md-1">
+                            <label for="card_holder_name" class="font-weight-bold">CARD HOLDER NAME</label>
+                            <input type="text" name="card_holder_name" class="form-control visa-card-input"
+                                   id="card_holder_name" placeholder="Card Holder Name">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-10 offset-md-1">
+                            <label class="font-weight-bold">EXPIRATION DATE</label>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4 offset-md-1">
+                            <select name="month" class="form-control visa-card-input"
+                                    id="month">
+                                <option value="">Month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select name="year" class="form-control visa-card-input" id="year">
+                                <option value="">Year</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-10 offset-md-1">
+                            <button class="btn btn-block btn-danger visa-card-input font-weight-bold visa-card-button">
+                                COMPLETE
+                                ORDER(TOTAL BDT 2980
+                                .00)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Bkash Modal  -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bkash-modal">
+        bKash
+    </button>
+    <div class="modal fade" id="bkash-modal" tabindex="-1" role="dialog" aria-labelledby="visaModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row py-4">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="bkash-modal-content">
+                                <div class="bkash-modal-header">
+                                    <div class="visa-modal-image-area d-flex justify-content-center">
+                                        <img src="./assets/images/bkash.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="bkash-modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12 bkash-checkout-text">
+                                            <p>bKash Checkout</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="merchant-details">
+                                                <p>Merchant: BRITS</p>
+                                                <p>Transaction id: fa542xAUhsq52</p>
+                                                <p>Amount: BDT 2980</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="bkash-account-number-text">Your bKash account number</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-8 offset-md-2">
+                                                    <input type="text" class="form-control"
+                                                           name="bkash_number"
+                                                           placeholder="eg. 01xxxxxxxxx">
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 bkash-terms-conditions-area">
+                                            <input type="radio" name="" id="">
+                                            <label for="" class="bkash-terms-conditions">I agree to the terms
+                                                and
+                                                conditions</label>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4 offset-md-2">
+                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">PROCEED</button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">CLOSE</button>
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--  Footer Area  -->
     <div class="footer-area pt-5">
         <img src="./assets/images/payment-page-footer.png" alt="">

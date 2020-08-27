@@ -140,6 +140,7 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
+    cursor: pointer;
     }
 
 .login-modal-close-button i, .registration-modal-close-button i {
