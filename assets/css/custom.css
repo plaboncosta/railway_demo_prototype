@@ -156,3 +156,7 @@ body {
     background-color: #000 !important;
     opacity: 0.9 !important;
     }
+
+.cursor-pointer {
+    cursor: pointer;
+    }
