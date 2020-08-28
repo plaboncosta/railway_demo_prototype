@@ -15,7 +15,7 @@
 <!-- Wrapper Defined -->
 <div id="wrapper">
 
-    <div class="row mx-0 px-0">
+    <div class="row mx-0 px-0 mb-5">
         <div class="col-md-12 pt-4">
             <!--  Train info  -->
             <div class="train-info">
@@ -88,13 +88,13 @@
                         <div id="wallet" class="tab-pane fade">
                             <div class="row mt-3">
                                 <div class="col-md-2">
-                                    <input name="wallet" type="radio" value="bkash" id="bkash">
+                                    <input name="card_type" type="radio" value="bkash" id="bkash">
                                     <label for="bkash">
                                         <img src="./assets/images/bkash.jpg" width="80px" alt="">
                                     </label>
                                 </div>
                                 <div class="col-md-2">
-                                    <input name="wallet" type="radio" value="nagad" id="nagad">
+                                    <input name="card_type" type="radio" value="nagad" id="nagad">
                                     <label for="nagad">
                                         <img src="./assets/images/nagad.jpg" width="100px" alt="">
                                     </label>
@@ -112,7 +112,9 @@
                             Refund Rules, Please read Terms and Conditions</span>
                         </div>
                         <div class="col-md-4 d-flex justify-content-end">
-                            <button class="confirm-payment btn btn-danger banner-form-input">Confirm Payment
+                            <button onclick="confirmPaymentModalShow()"
+                                    class="confirm-payment btn btn-danger banner-form-input">Confirm
+                                Payment
                             </button>
                         </div>
                     </div>
@@ -122,9 +124,6 @@
     </div>
 
     <!--  Visa Card Modal  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visa-card">
-        Visa Card
-    </button>
     <div class="modal fade" id="visa-card" tabindex="-1" role="dialog" aria-labelledby="visaModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -189,7 +188,8 @@
                     </div>
                     <div class="row my-4">
                         <div class="col-md-10 offset-md-1">
-                            <button class="btn btn-block btn-danger visa-card-input font-weight-bold visa-card-button">
+                            <button onclick="getConfirmationModal()"
+                                    class="btn btn-block btn-danger visa-card-input font-weight-bold visa-card-button">
                                 COMPLETE
                                 ORDER(TOTAL BDT 2980
                                 .00)
@@ -202,9 +202,6 @@
     </div>
 
     <!--  Bkash Modal  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bkash-modal">
-        bKash
-    </button>
     <div class="modal fade" id="bkash-modal" tabindex="-1" role="dialog" aria-labelledby="visaModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -252,12 +249,16 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-4 offset-md-2">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button"
+                                                            onclick="showBKashConfirmationModal()">
                                                         PROCEED
                                                     </button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button"
+                                                            data-dismiss="modal">
                                                         CLOSE
                                                     </button>
                                                 </div>
@@ -275,9 +276,6 @@
     </div>
 
     <!--  Bkash Verification Modal  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bkash-verification-modal">
-        bKash Verification
-    </button>
     <div class="modal fade" id="bkash-verification-modal" tabindex="-1" role="dialog"
          aria-labelledby="visaModalLabel"
          aria-hidden="true">
@@ -313,17 +311,22 @@
                                         <div class="col-md-12">
                                             <div class="row mt-5">
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button"
+                                                            onclick="showBKashPinModal()">
                                                         PROCEED
                                                     </button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button">
                                                         RESEND
                                                     </button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button"
+                                                            data-dismiss="modal">
                                                         CLOSE
                                                     </button>
                                                 </div>
@@ -341,9 +344,6 @@
     </div>
 
     <!--  Bkash Pin Submission Modal  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bkash-pin-modal">
-        bKash Pin
-    </button>
     <div class="modal fade" id="bkash-pin-modal" tabindex="-1" role="dialog"
          aria-labelledby="bkashPinModalLabel"
          aria-hidden="true">
@@ -379,12 +379,14 @@
                                         <div class="col-md-12">
                                             <div class="row mt-5">
                                                 <div class="col-md-4 offset-md-2">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button onclick="getConfirmationModal()"
+                                                            class="btn btn-light py-2 px-3 bkash-modal-button">
                                                         CONFIRM
                                                     </button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button">
+                                                    <button class="btn btn-light py-2 px-3 bkash-modal-button"
+                                                            data-dismiss="modal">
                                                         CLOSE
                                                     </button>
                                                 </div>
@@ -402,9 +404,6 @@
     </div>
 
     <!--  Ticket Confirmation Modal  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticket-confirmation">
-        Ticket Confirmation
-    </button>
     <div class="modal fade" id="ticket-confirmation" tabindex="-1" role="dialog"
          aria-labelledby="visaModalLabel"
          aria-hidden="true">
@@ -436,7 +435,8 @@
                                             </button>
                                         </div>
                                         <div class="col-md-4">
-                                            <button class="btn btn-block btn-danger ticket-confirmation-button py-3">
+                                            <button onclick="window.location.href = 'index.html'"
+                                                    class="btn btn-block btn-danger ticket-confirmation-button py-3">
                                                 <i class="icofont-home"></i>
                                                 Home
                                             </button>
@@ -464,7 +464,7 @@
     </div>
 
     <!--  Footer Area  -->
-    <div class="ui-footer-container mt-5">
+    <div class="ui-footer-container">
         <div class="d-flex justify-content-center ui-footer-top">
             <div class="ui-footer-comp">
                 <h3>INFORMATION</h3>
@@ -509,5 +509,37 @@
 <script src="./assets/js/jquery.slim.js"></script>
 <script src="./assets/js/popper.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script>
+    function confirmPaymentModalShow(){
+        let card_type = $("input[name='card_type']:checked").val();
+        if (card_type == 'bkash'){
+            $("#bkash-modal").modal('show');
+        } else if (card_type == 'visa'){
+            $("#visa-card").modal('show');
+        } else{
+            alert('Please select Visa or bKash Payment Gateway!');
+        }
+    }
+
+    function showBKashConfirmationModal(){
+        $("#bkash-modal").modal('hide');
+        $("#bkash-verification-modal").modal('show');
+    }
+
+    function resendBKashConfirmationCode(){
+
+    }
+
+    function showBKashPinModal(){
+        $("#bkash-verification-modal").modal('hide');
+        $("#bkash-pin-modal").modal('show');
+    }
+
+    function getConfirmationModal(){
+        $("#bkash-pin-modal").modal('hide');
+        $("#visa-card").modal('hide');
+        $("#ticket-confirmation").modal('show');
+    }
+</script>
 </body>
 </html>

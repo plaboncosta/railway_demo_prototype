@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./assets/css/icofont.min.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <style>
+        .modal-lg {
+            width: 650px !important;
+            }
+    </style>
 </head>
 <body>
 <!-- Wrapper Defined -->
@@ -82,7 +87,8 @@
                         </div>
                         <div class="col-md-3">
                             <label class="d-block font-weight-bold">&nbsp;</label>
-                            <a href="trainDetails.html" class="btn btn-danger btn-block font-weight-bold text-decoration-none">Find
+                            <a href="javascript:void(0);" onclick="searchTicketInfo()"
+                               class="btn btn-danger btn-block font-weight-bold text-decoration-none">Find
                                 Trains
                                 <i class="icofont-search d-inline-block pl-1"></i>
                             </a>
@@ -141,6 +147,7 @@
         <img src="./assets/images/home-page-body.png" alt="">
     </div>
 
+    <!--  Footer Area  -->
     <div class="ui-footer-container">
         <div class="d-flex justify-content-center ui-footer-top">
             <div class="ui-footer-comp">
@@ -180,13 +187,9 @@
     </div>
 
     <!--  Login Modal  -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
-        Login
-    </button>
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="login-modal-close-button">
                     <i class="icofont-close-line-circled" data-dismiss="modal"></i>
@@ -215,7 +218,7 @@
                                     Forget Password
                                 </div>
                                 <div class="col-md-12 pt-3">
-                                    <button
+                                    <button onclick="searchTicketDetails()"
                                             class="btn btn-danger btn-block font-weight-bold banner-form-input login-modal-button">
                                         Login
                                     </button>
@@ -234,14 +237,10 @@
     </div>
 
     <!--  Registration Modal  -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration-modal">
-        Registration
-    </button>
     <div class="modal fade" id="registration-modal" tabindex="-1" role="dialog"
          aria-labelledby="registrationModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="registration-modal-close-button">
                     <i class="icofont-close-line-circled" data-dismiss="modal"></i>
@@ -316,7 +315,7 @@
                                     I agree to the <span class="text-success">Terms of Service</span>
                                 </div>
                                 <div class="col-md-12 pt-3">
-                                    <button
+                                    <button onclick="searchLoginModal()"
                                             class="btn btn-danger btn-block font-weight-bold banner-form-input registration-modal-button">
                                         Sign Up
                                     </button>
@@ -340,5 +339,21 @@
 <script src="./assets/js/jquery.slim.js"></script>
 <script src="./assets/js/popper.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+
+<script>
+    function searchTicketInfo(){
+        $("#registration-modal").modal('show');
+    }
+
+    function searchLoginModal(){
+        $("#registration-modal").modal('hide');
+        $("#login-modal").modal('show');
+    }
+
+    function searchTicketDetails(){
+        $("#login-modal").modal('hide');
+        window.location.href = 'trainDetails.html';
+    }
+</script>
 </body>
 </html>

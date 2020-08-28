@@ -6,7 +6,7 @@
     width: 100%;
     }
 
-.passenger-details {
+.passenger-details, .seat-selection {
     background-color: #fff;
     border-radius: 8px;
     padding: 25px;
@@ -48,12 +48,70 @@
     }
 
 .passenger-details .passenger-details-plus-button {
-    display: inline-block;
-    padding-left: 12px;
+    display: flex;
     font-weight: 600;
     color: #027E5B;
     }
 
 .passenger-details .passenger-details-plus-button:hover {
     text-decoration: none;
+    }
+
+.add-passenger-text {
+    display: inline-block;
+    padding-left: 10px;
+    }
+
+.seat-selection-info {
+    background-color: #F4F5F9;
+    border-radius: 8px;
+    padding: 10px 20px;
+    }
+
+.seat-selection-info h4, .seat-selection-info p {
+    font-weight: 400;
+    margin-bottom: 0;
+    }
+
+.seat-selection-info h4 {
+    font-size: 20px;
+    }
+
+.seat-selection-symbol {
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+    }
+
+.seat-selection-red-symbol {
+    background-color: #c16666;
+    }
+
+.seat-selection-green-symbol {
+    background-color: #6fe26d;
+    }
+
+.seat-selection-black-symbol {
+    background-color: #000;
+    }
+
+.seat-selection-coach-id-text {
+    font-weight: 600;
+    }
+
+.seat-selection-coach-number-first, .seat-selection-coach-number-second, .seat-selection-coach-number-third {
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    padding: 2px;
+    font-weight: 600;
+    }
+
+.seat-selection-coach-number-first {
+    border: 1px solid green;
+    }
+
+.seat-selection-coach-number-second, .seat-selection-coach-number-third {
+    background-color: #9E9E9E;
+    color: #fff;
     }
