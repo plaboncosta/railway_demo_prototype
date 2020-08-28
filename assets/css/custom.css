@@ -151,3 +151,8 @@ body {
     font-size: 22px;
     color: red;
     }
+
+.modal-backdrop {
+    background-color: #000 !important;
+    opacity: 0.9 !important;
+    }

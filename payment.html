@@ -422,14 +422,15 @@
                                 <div class="ticket-confirmation-body">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <button
+                                            <button onclick="printTicket()"
                                                     class="btn btn-block btn-danger ticket-confirmation-button py-3">
                                                 <i class="icofont-print"></i>
                                                 Print the Ticket
                                             </button>
                                         </div>
                                         <div class="col-md-4">
-                                            <button class="btn btn-block btn-danger ticket-confirmation-button py-3">
+                                            <button onclick="downloadTicket()"
+                                                    class="btn btn-block btn-danger ticket-confirmation-button py-3">
                                                 <i class="icofont-download"></i>
                                                 Download
                                             </button>
@@ -444,12 +445,14 @@
                                     </div>
                                     <div class="row mt-4 ticket-confirmation-journey-area">
                                         <div class="col-md-6">
-                                            <button class="btn btn-block ticket-confirmation-journey py-3">
+                                            <button onclick="window.location.href = 'trainDetails.html'"
+                                                    class="btn btn-block ticket-confirmation-journey py-3">
                                                 Book Another Journey
                                             </button>
                                         </div>
                                         <div class="col-md-6">
-                                            <button class="btn btn-block ticket-confirmation-journey py-3">
+                                            <button onclick="window.location.href = 'trainDetails.html'"
+                                                    class="btn btn-block ticket-confirmation-journey py-3">
                                                 Book Return Journey
                                             </button>
                                         </div>
@@ -458,6 +461,36 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="print-ticket-modal" tabindex="-1" role="dialog"
+         aria-labelledby="visaModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="height: 700px;">
+                    <iframe id="print-ticket" src="./assets/images/print-image.png"
+                            style="width: 100%; height: 100%"
+                            frameborder="0"
+                            allowfullscreen="false"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="download-ticket-modal" tabindex="-1" role="dialog"
+         aria-labelledby="visaModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="height: 700px;">
+                    <iframe id="download-ticket" src="./assets/images/download-ticket.png"
+                            style="width: 100%; height: 100%"
+                            frameborder="0"
+                            allowfullscreen="false"></iframe>
                 </div>
             </div>
         </div>
@@ -526,10 +559,6 @@
         $("#bkash-verification-modal").modal('show');
     }
 
-    function resendBKashConfirmationCode(){
-
-    }
-
     function showBKashPinModal(){
         $("#bkash-verification-modal").modal('hide');
         $("#bkash-pin-modal").modal('show');
@@ -539,6 +568,22 @@
         $("#bkash-pin-modal").modal('hide');
         $("#visa-card").modal('hide');
         $("#ticket-confirmation").modal('show');
+    }
+
+    function printTicket(){
+        $("#print-ticket-modal").modal('show');
+        $("#print-ticket").on("load", function (){
+            $(this).contents().find('img').css({width: '100%', height: '100%', objectFit: 'cover'});
+
+        });
+    }
+
+    function downloadTicket(){
+        $("#download-ticket-modal").modal('show');
+        $("#download-ticket").on("load", function (){
+            $(this).contents().find('img').css({width: '100%', height: '100%', objectFit: 'cover'});
+
+        });
     }
 </script>
 </body>
