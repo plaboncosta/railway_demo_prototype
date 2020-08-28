@@ -1,13 +1,15 @@
 .logo-image {
     width: 90px;
     height: 90px;
+    margin-top: 60px;
+    margin-left: 50px;
     }
 
 .navbar {
-    background-color: #e8e8e8  !important;
-    -webkit-box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
-    box-shadow: 3px 9px 5px -9px rgba(0,0,0,0.75);
+    background-color: #e8e8e8 !important;
+    -webkit-box-shadow: 3px 9px 5px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 9px 5px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 9px 5px -9px rgba(0, 0, 0, 0.75);
     }
 
 .nav-item {
@@ -32,14 +34,14 @@
 
 .searched-content-area {
     background-image: url('../images/banner-two.jpg');
-    height: 650px;
+    height: 350px;
     width: 100%;
     background-position: 100% 100%;
     background-size: cover;
     }
 
 .searched-content-overlay {
-    height: 650px;
+    height: 350px;
     width: 100%;
     background-color: #1C8467;
     opacity: 0.8;
@@ -84,7 +86,7 @@
     }
 
 .searched-content-form-body {
-    padding: 80px 40px;
+    padding: 30px 40px;
     }
 
 .searched-content-form-input-highlight-text {
