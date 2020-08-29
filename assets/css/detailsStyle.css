@@ -128,6 +128,11 @@
     text-align: center;
     }
 
+.ui-details .ui-filterBy{
+    width: 50%;
+    background: #cefff1;
+}
+
 .ui-details-train-name {
     font-size: 15px;
     }

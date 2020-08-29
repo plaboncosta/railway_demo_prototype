@@ -55,11 +55,11 @@ sub.addEventListener('click', () => {
     meals.style.background = 'transparent';
     profile.style.background = 'transparent';
     complaint.style.background = 'transparent';
-    pro5.style.display = 'block';
+    pro4.style.display = 'block';
     pro2.style.display = 'none';
     pro3.style.display = 'none';
     pro1.style.display = 'none';
-    pro4.style.display = 'none';
+    pro5.style.display = 'none';
 });
 
 complaint.addEventListener('click', () => {
@@ -68,9 +68,9 @@ complaint.addEventListener('click', () => {
     meals.style.background = 'transparent';
     sub.style.background = 'transparent';
     profile.style.background = 'transparent';
-    pro4.style.display = 'block';
+    pro5.style.display = 'block';
     pro2.style.display = 'none';
     pro3.style.display = 'none';
-    pro5.style.display = 'none';
+    pro4.style.display = 'none';
     pro1.style.display = 'none';
 });
