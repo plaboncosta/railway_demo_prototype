@@ -204,6 +204,15 @@
 .ui-train-container .bg-green{background: #34da90}
 .ui-train-container .bg-red{background: #fe838f}
 
+.ui-train-container .ui-overlay::before{
+    content: "";
+    width: 96%;
+    height: 96%;
+    position: absolute;
+    border-radius: 13px;
+    background: rgba(154, 154, 154, .9);
+}
+
 
 
 @media only screen and (max-width: 1600px){
